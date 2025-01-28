@@ -1,4 +1,4 @@
-Ponoor PowerSTEP01 Library
+PowerSTEP01 Library v3
 ==========
 Arduino library support for STMicroelectronics [PowerSTEP01 stepper driver chip](https://www.st.com/en/motor-drivers/powerstep01.html) with voltage and current mode drive.
 
