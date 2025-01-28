@@ -201,7 +201,7 @@
 #define TOFF_MIN             0x10
 
 //dSPIN commands
-#define NOP                  0x00
+#define NOP_CMD              0x00
 #define SET_PARAM            0x00
 #define GET_PARAM            0x20
 #define RUN                  0x50
