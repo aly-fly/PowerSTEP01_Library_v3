@@ -49,6 +49,7 @@ class powerSTEP
 	  void setAccRaw(unsigned long integerSpeed);
 	  void setDecRaw(unsigned long integerSpeed);
     void setOCThreshold(byte threshold);
+    void setVoltageStallThreshold(byte threshold);
     void setPWMFreq(int divisor, int multiplier);
     void setSlewRate(int slewRate);
     void setOCShutdown(int OCShutdown);
@@ -81,6 +82,7 @@ class powerSTEP
     unsigned long getAccRaw();
     unsigned long getDecRaw();
     byte getOCThreshold();
+    byte getVoltageStallThreshold();
     int getPWMFreqDivisor();
     int getPWMFreqMultiplier();
     int getSlewRate();

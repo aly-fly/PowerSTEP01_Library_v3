@@ -190,6 +190,16 @@ byte powerSTEP::getOCThreshold()
   return (byte) (getParam(OCD_TH) & 0x1F);
 }
 
+void powerSTEP::setVoltageStallThreshold(byte threshold)
+{
+  setParam(STALL_TH, 0x1F & threshold);
+}
+
+byte powerSTEP::getVoltageStallThreshold()
+{
+  return (byte) (getParam(STALL_TH) & 0x1F);
+}
+
 // The next few functions are all breakouts for individual options within the
 //  single register CONFIG. We'll read CONFIG, blank some bits, then OR in the
 //  new value.

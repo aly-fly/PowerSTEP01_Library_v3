@@ -133,20 +133,20 @@
 // Status register bit renames- read-only bits conferring information about the
 //  device to the user.
 #define STATUS_HIZ                     0x0001 // high when bridges are in HiZ mode
-#define STATUS_BUSY                    0x0002 // mirrors BUSY pin
-#define STATUS_SW_F                    0x0004 // low when switch open, high when closed
-#define STATUS_SW_EVN                  0x0008 // active high, set on switch falling edge,
+#define STATUS_nBUSY                   0x0002 // mirrors BUSY pin
+#define STATUS_SW_CLOS                 0x0004 // low when switch open, high when closed
+#define STATUS_SW_EVNT                 0x0008 // active high, set on switch falling edge,
                                                     //  cleared by reading REG_STATUS
 #define STATUS_DIR                     0x0010 // Indicates current motor direction.
                                                     //  High is FWD, Low is REV.
 #define STATUS_CMD_ERROR               0x0080 // Last command not performed or valid.
 #define STATUS_STCK_MOD                0x0100 // Step clock mode is active
-#define STATUS_UVLO                    0x0200 // Undervoltage lockout is active
-#define STATUS_UVLO_ADC                0x0400 // ADC Undervoltage event is active
+#define STATUS_nUVLO                   0x0200 // Undervoltage lockout is active
+#define STATUS_nUVLO_ADC               0x0400 // ADC Undervoltage event is active
 
-#define STATUS_OCD                     0x2000 // Overcurrent detected
-#define STATUS_STALL_B                 0x4000 // Stall detected on B bridge
-#define STATUS_STALL_A                 0x8000 // Stall detected on A bridge
+#define STATUS_nOCD                     0x2000 // Overcurrent detected
+#define STATUS_nSTALL_B                 0x4000 // Stall detected on B bridge
+#define STATUS_nSTALL_A                 0x8000 // Stall detected on A bridge
 
 // Status register thermal status field
 #define STATUS_TH_STATUS               0x1800 // field mask
